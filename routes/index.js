@@ -4,8 +4,8 @@ var router = express.Router();
 const request = require('request')
 const cheerio = require("cheerio");
 
-const Comments = require('../models/Comments.js')
-const Article = require('../models/Article.js')
+const Comments = require('../models/comment.js')
+const Article = require('../models/article.js')
 
 router.get('/', (req, res) => {
     res.render('scrape')
